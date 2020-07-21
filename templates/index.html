@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="static/css/stylesheet.css">
+<title>一枚メモ</title>
+</head>
+
+<body>
+    <div class="wrap1">
+        <h1 class="page-title">一枚メモ</h1>
+        <form action="{{url_for('index')}}" method="POST" >
+        
+        <textarea name="memo" class="box1" rows="20" cols="60" >{{ message }}</textarea>
+        <div class="container1"></div>
+        <p class="data1">最終更新日：{{ update_date }}</p>
+        <button class="button" type="submit" >保存</button>
+        <button class="button" type="reset">リセット</button>
+        
+    </div>
+</form>
+</div>
+</body>
+</html>
